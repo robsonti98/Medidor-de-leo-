@@ -1,9 +1,6 @@
-#include <TimerOne.h>
+#include  <TimerOne.h>
 
 #include <LiquidCrystal.h>
-
-
-
 
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
 
@@ -42,15 +39,15 @@ void setup()
   lcd.begin(16,2);
 
   lcd.setCursor(0,0);
-  lcd.print("   Medidor de");
+  lcd.print("Medidor de");
   lcd.setCursor(0,1);
-  lcd.print("      Oléo");
+  lcd.print("Oleo Vegetal");
   delay(5000);
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("      SANTEC");
+  lcd.print(" SANTEC");
   lcd.setCursor(0,1);
-  lcd.print("   Ambiental");
+  lcd.print(" AMBIENTAL");
   delay(3000);
   lcd.clear();
 
@@ -115,10 +112,6 @@ void loop()
     {
        litros = 0;  
     }
-
-
-
-
 }
 
 
